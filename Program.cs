@@ -97,10 +97,11 @@ namespace PARP_LR1_CSharp
 
             Console.WriteLine("\n\n\n");
 
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-
             Task7.Run(new[] { 512, 1024, 2048 }, repeats: 1);
+            Console.WriteLine("\n\n\n");
+
             Task9.Run(n: 1024, repeats: 1);
+            Console.WriteLine("\n\n\n");
 
             Console.ReadKey();
         }
