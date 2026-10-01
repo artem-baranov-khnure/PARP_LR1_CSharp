@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using PARP_LR1_CSharp.Part2;
 using System.Threading;
 
 namespace PARP_LR1_CSharp
@@ -95,6 +96,12 @@ namespace PARP_LR1_CSharp
 
 
             Console.WriteLine("\n\n\n");
+
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            Task7.Run(new[] { 512, 1024, 2048 }, repeats: 1);
+            Task9.Run(n: 1024, repeats: 1);
+
             Console.ReadKey();
         }
     }
